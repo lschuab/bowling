@@ -1,32 +1,93 @@
+body {
+  background-color: lightgray;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+#ball-tracker {
+  font-size: 4rem;
+  text-align: left;
+  display: flex;
+  margin-left: 9rem;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  margin-right: 5rem;
+}
+
+#reset {
+  cursor: pointer;
+  margin-left: 60rem;
+  font-size: 1.5rem;
+  background-color: grey;
+  padding: .5rem;
+  border: solid black
+}
+
+#buttons {
+  margin-left: 12rem; 
+  display: flex;
+  align-items: center;
+}
+
+button {
+  margin: 1rem;
+  font-size: 3rem;
+  background-color: teal;
+  cursor: pointer;
+  padding: .5rem 1rem;
+}
+
+#scorecard {
+  height: 12rem;
+  width: 100rem;
+  margin: 6rem auto;
+  border: solid teal;
+  display: flex;
+}
+
+.frame {
+  height: 100%;
+  border: solid teal;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.frame-number {
+  height: 2rem;
+  border-bottom: solid teal;
+  width: 100%;
+  font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ball-scores {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  font-size: 2rem;
+}
+
+.ball1-score {
+  height: 100%;
+  width: 50%;
+}
+
+.ball2-score {
+  height: 100%;
+  width: 50%;
+  border-left: solid teal;
+  border-bottom: solid teal;
+}
+
+.frame-score {
+  margin-top: 1.2rem;
+  font-size: 3rem;
+}
+
+#total-score {
+  font-size: 4rem;
 }
